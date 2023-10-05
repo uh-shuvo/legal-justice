@@ -10,15 +10,28 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!-- font-awesome  -->
         <script src="https://kit.fontawesome.com/b50f35bed9.js" crossorigin="anonymous"></script>
+        <!-- google fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap"
+            rel="stylesheet">
+        <!-- css link  -->
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <!-- header start  -->
-        <section class="container">
-            <nav>
+        <nav class="container">
+            <header>
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
                         <a class="navbar-brand fs-4 fw-bold bg-info p-2 rounded bg" href="#">Legal Justice</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mx-auto gap-4">
                                 <li class="nav-item">
@@ -41,14 +54,61 @@
                                             class="fa-solid fa-chevron-right"></i></a>
                                 </li>
                             </ul>
-                            <form class="d-flex" role="search">
-                                <button class="btn btn-success" type="submit">Search</button>
-                            </form>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Free Consulation
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Follow</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            যাহা তুমি দেখাও, তার চেয়ে বেশি তোমার থাকা উচিত। যা তুমি জান, তার তুলনায় কম
+                                            কথা বলা উচিত।
+                                            <br>
+                                            ভাগ্য বলে কিছুই নেই, প্রত্যেকের চেষ্টা ও যত্নের উপর তা গড়ে উঠে॥ <br>
+                                            দীর্ঘসূত্রিতা ও আলস্যকে প্রশ্রয় দেবেন না। যখন যা করা প্রয়োজন, তখনই তা
+                                            করুন।
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </nav>
-            </nav>
-        </section>
+            </header>
+        </nav>
+        <!-- main section  -->
+        <main class="container">
+            <!-- banner start  -->
+            <section class="container">
+                <div class="card text-bg-dark">
+                    <img src="images/banner.png" class="card-img w-auto h-auto" alt="...">
+                    <div class="card-img-overlay text-center mt-5">
+                        <h5 class="display-4 fw-bold">We Provide Effective <br> Legal Solutions</h5>
+                        <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the
+                            <br>
+                            majority have suffered alteration in some form, by injected humour.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
 
         <!-- bs js  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
