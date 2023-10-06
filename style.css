@@ -16,3 +16,7 @@ body {
     width: auto;
     height: 500px;
 }
+
+.carousel-caption {
+    margin-top: -60px;
+}
